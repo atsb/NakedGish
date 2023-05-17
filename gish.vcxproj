@@ -131,14 +131,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\MSVC\SDL2;C:\Program Files %28x86%29\OpenAL 1.1 SDK\include;$(SolutionDir)dependencies\includes;$(SolutionDir)dependencies\includes\png;$(SolutionDir)dependencies\includes\glew;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\OpenAL 1.1 SDK\include;$(SolutionDir)dependencies\includes;$(SolutionDir)dependencies\includes\png;$(SolutionDir)dependencies\includes\sdl2;$(SolutionDir)dependencies\includes\glew;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard_C>Default</LanguageStandard_C>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\MSVC\SDL2;C:\Program Files %28x86%29\OpenAL 1.1 SDK\libs\Win64;$(SolutionDir)dependencies\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\OpenAL 1.1 SDK\libs\Win64;$(SolutionDir)dependencies\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2main.lib;SDL2.lib;glew32.lib;OpenAL32.lib;libogg.lib;libvorbisfile_static.lib;libvorbis_static.lib;opengl32.lib;shell32.lib</AdditionalDependencies>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
   </ItemDefinitionGroup>
